@@ -1,0 +1,13 @@
+<div data-options="dxView : { name: 'home', title: localizedStrings[LocalizeWidgets.localization].viewTitles['home'] } ">
+    <div class="home-view" data-options="dxContent : { targetPlaceholder: 'content' } ">
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-label" data-bind="text: labelTitle">
+                </div>
+                <div class="dx-field-value">
+                    <div data-bind="dxLookup:{dataSource: dataSource, displayExpr: 'text', valueExpr:'value', value:LocalizeWidgets.localization, valueChangeAction: valueChanged}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
